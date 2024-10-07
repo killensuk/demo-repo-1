@@ -1,0 +1,11 @@
+name: Test Image
+on:
+  workflow_dispatch:
+
+jobs:
+  test_job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check Terraform
+      run: terraform init
